@@ -90,7 +90,6 @@ class HARBS():
         self.dotConfigFiles = os.listdir(self.dotConfigPath)
 
         self.dotFilesPath = self.parentDirectory + "/" + self.dotFilesRepositoryName + "/dot-files"
-        self.dotFiles = os.listdir(self.dotFilesPath)
 
     def installPackages(self):
         '''
@@ -116,7 +115,10 @@ class HARBS():
             ![git clone @(self.dotFilesRepository)]
             ![cd "HARBS/"]
         else:
-            print(f"[{self.RED}HARBS{self.NC}] Folder {self.GREEN}{self.dotFilesRepositoryName}{self.NC} already exists in {self.BLUE}{self.parentDirectory}{self.NC}, could not clone repository")
+            print(f"[{self.RED}HARBS{self.NC}] Folder {self.GREEN}{self.dotFilesRepositoryName}{self.NC} already exists in {self.BLUE}{self.parentDirectory}{self.NC}, assuming repository is already cloned")
+
+        # List all dot files in the cloned repository
+        self.dotFiles = os.listdir(self.dotFilesPath)
 
         return
 
@@ -125,7 +127,6 @@ class HARBS():
             Creates a symbolic link for every file in the given dotfiles repository,
             as long as it is not in the blacklist.
         '''
-
         for dotFile in self.dotFiles:
             pathToDotFile = self.dotFilesPath + "/" + dotFile
             pathToConfigFile = self.dotConfigPath + "/" + dotFile
@@ -155,8 +156,14 @@ class HARBS():
                         ![ln -s @(pathToDotFile) @(self.home + "/" + dotFile)]
                 # If the file should be place in '~/.config'.
                 else:
-                    print(f"[{self.GREEN}HARBS{self.NC}] Symbolic link for {self.GREEN}{dotFile}{self.NC} created on {self.BLUE}{pathToConfigFile}{self.NC}")
-                    ![ln -s @(pathToDotFile) @(self.dotConfigPath)]
+                    # If the file already exists in '~/.config'.
+                    if os.path.isfile(pathToConfigFile):
+                        print(f"[{self.RED}HARBS{self.NC}] File {self.GREEN}{dotFile}{self.NC} already exists in {self.BLUE}{self.dotConfigPath}{self.NC}")
+                        print(f"[{self.RED}HARBS{self.NC}] {self.LIGHTRED}Delete{self.NC} the file and run the installer again")
+                    # If the file does not exist in '~/.config'.
+                    else:
+                        print(f"[{self.GREEN}HARBS{self.NC}] Symbolic link for {self.GREEN}{dotFile}{self.NC} created on {self.BLUE}{pathToConfigFile}{self.NC}")
+                        ![ln -s @(pathToDotFile) @(self.dotConfigPath)]
 
         return
 
