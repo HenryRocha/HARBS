@@ -86,9 +86,9 @@ class HARBS():
         for dotFile in dotFiles:
             if dotFile not in self.blacklist:
                 if dotFile in self.homeWhitelist:
-                    destination = "~/"
+                    destination = os.environ.get("HOME") + "/"
                 else:
-                    destination = "~/.config"
+                    destination = os.environ.get("HOME") + "/.config/"
 
                 if !(ln -s @(os.path.abspath(dotFile)) @(destination) 2> /dev/null).returncode != 0:
                     print(f"[{self.RED}HARBS{self.NC}] {self.GREEN}{dotFile}{self.NC} already " +
