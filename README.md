@@ -1,6 +1,20 @@
 # HARBS
 Henry's Auto-Rice Bootstrapping Scripts. Install everything you need to have a system just like mine.
 
+## Table of Contents
+- [HARBS](#harbs)
+  - [Table of Contents](#table-of-contents)
+  - [What is HARBS](#what-is-harbs)
+  - [Installation](#installation)
+  - [Customization](#customization)
+  - [The script](#the-script)
+
+## What is HARBS
+
+HARBS is a script written in [xonsh][1] that autoinstalls and autoconfigures a fully-functioning minimal Manjaro environment.
+
+HARBS is intended to be run on a fresh install of Manjaro CLI System, using [Manjaro Architect][2]. Most of HARBS should work on any Arch-based distro, but it is not guaranteed.
+
 ## Installation
 
 To use **HARBS** simply run the following:
@@ -9,12 +23,6 @@ git clone https://github.com/HenryRocha/HARBS.git
 cd HARBS
 sh installer.sh
 ```
-
-## What is HARBS
-
-HARBS is a script written in [xonsh][1] that autoinstalls and autoconfigures a fully-functioning minimal Manjaro environment.
-
-HARBS is intended to be run on a fresh install of Manjaro CLI System, using [Manjaro Architect][2]. Most of HARBS should work on any Arch-based distro, but it is not guaranteed.
 
 ## Customization
 
