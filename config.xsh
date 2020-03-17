@@ -29,7 +29,7 @@ packages = [
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
-dotFilesRepository = "https://github.com/henryrocha/GuidesAndFiles.git"
+dotFilesRepository = "https://github.com/henryrocha/dotfiles.git"
 
 # List of files/folders to place in '~/', you home directory. Every other file that
 # is not listed here will be placed in '~/.config'.
