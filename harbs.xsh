@@ -80,7 +80,7 @@ class HARBS():
         '''
 
         print(f"\n[{self.GREEN}HARBS{self.NC}] Creating symbolic links...")
-        ![cd ../@(self.dotFilesRepositoryName + "/dot-files")]
+        ![cd ../@(self.dotFilesRepositoryName)]
         dotFiles = $(ls -a).strip().split("\n")
 
         for dotFile in dotFiles:
