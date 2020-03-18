@@ -25,7 +25,12 @@ packages = [
     "network-manager-applet",
     "python-ueberzug",
     "materia-gtk-theme",
-    "arc-icon-theme"
+    "arc-icon-theme",
+    "lxrandr"
+    "alsa-utils"
+    "pulseaudio",
+    "pulseaudio-alsa",
+    "pavucontrol"
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
