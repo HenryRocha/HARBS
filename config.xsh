@@ -27,6 +27,7 @@ packages = [
     "materia-gtk-theme",
     "arc-icon-theme",
     "lxrandr",
+    "alsa-utils",
     "pulseaudio",
     "pulseaudio-alsa",
     "pavucontrol"
