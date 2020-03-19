@@ -34,7 +34,8 @@ packages = [
     "picom",
     "xorg-xset",
     "xsecurelock",
-    "physlock"
+    "physlock",
+    "xdg-utils"
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
