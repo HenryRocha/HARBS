@@ -35,14 +35,15 @@ packages = [
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
-dotFilesRepository = "https://github.com/henryrocha/dotfiles.git"
+dotFilesRepository = "https://github.com/HenryRocha/dotfiles.git"
 
 # List of files/folders to place in '~/', you home directory. Every other file that
 # is not listed here will be placed in '~/.config'.
 homeWhitelist = [
     ".xinitrc",
     ".Xresources",
-    ".zprofile"
+    ".zprofile",
+    ".gtkrc-2.0.mine"
 ]
 
 # Dotfiles blacklist. A list of files/folders to ignore. These will not be placed anywhere.
@@ -50,5 +51,7 @@ blacklist = [
     ".",
     "..",
     ".git",
-    "README.md"
+    "README.md",
+    "dconf-settings.conf",
+    "libinput-gestures.conf"
 ]
