@@ -31,7 +31,10 @@ packages = [
     "pulseaudio",
     "pulseaudio-alsa",
     "pavucontrol",
-    "picom"
+    "picom",
+    "xorg-xset",
+    "xsecurelock",
+    "physlock"
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
@@ -43,7 +46,8 @@ homeWhitelist = [
     ".xinitrc",
     ".Xresources",
     ".zprofile",
-    ".gtkrc-2.0.mine"
+    ".gtkrc-2.0.mine",
+    ".locker.sh"
 ]
 
 # Dotfiles blacklist. A list of files/folders to ignore. These will not be placed anywhere.
