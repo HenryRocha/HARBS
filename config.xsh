@@ -26,8 +26,7 @@ packages = [
     "python-ueberzug",
     "materia-gtk-theme",
     "arc-icon-theme",
-    "lxrandr"
-    "alsa-utils"
+    "lxrandr",
     "pulseaudio",
     "pulseaudio-alsa",
     "pavucontrol"
@@ -40,7 +39,8 @@ dotFilesRepository = "https://github.com/henryrocha/dotfiles.git"
 # is not listed here will be placed in '~/.config'.
 homeWhitelist = [
     ".xinitrc",
-    ".Xresources"
+    ".Xresources",
+    ".zprofile"
 ]
 
 # Dotfiles blacklist. A list of files/folders to ignore. These will not be placed anywhere.
