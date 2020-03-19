@@ -30,7 +30,8 @@ packages = [
     "alsa-utils",
     "pulseaudio",
     "pulseaudio-alsa",
-    "pavucontrol"
+    "pavucontrol",
+    "picom"
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
