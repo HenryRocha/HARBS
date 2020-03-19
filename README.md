@@ -24,6 +24,8 @@ cd HARBS
 sh installer.sh
 ```
 
+**_Obs:_** It is recommend to reboot after the install is complete, otherwise some programs won't start properly.
+
 ## Customization
 
 By default, HARBS uses the configuration found in the [`config.xsh`][3] and installs [my dotfiles][4]. These options can be easily changed by editing the configuration file.
