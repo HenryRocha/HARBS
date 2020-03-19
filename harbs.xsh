@@ -103,6 +103,17 @@ class HARBS():
 
         return
 
+    def configAlsa(self):
+        '''
+            Unmutes all the channels in ALSA. Mainly so I don't forget to do it.
+        '''
+
+        !(amixer sset Master unmute 2> /dev/null)
+        !(amixer sset Speaker unmute 2> /dev/null)
+        !(amixer sset Headphone unmute 2> /dev/null)
+
+        return
+
     def install(self):
         '''
             Installs HARBS.
@@ -115,6 +126,9 @@ class HARBS():
 
         # Create symbolic links.
         self.createSymbolicLinks()
+
+        # Unmute channels in ALSA
+        self.configAlsa()
 
 # ==========================================================================================================
 # Main
