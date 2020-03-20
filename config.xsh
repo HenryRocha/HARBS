@@ -53,7 +53,7 @@ homeWhitelist = [
     ".xinitrc",
     ".Xresources",
     ".zprofile",
-    ".gtkrc-2.0.mine",
+    ".gtkrc-2.0",
     ".locker.sh"
 ]
 
@@ -64,5 +64,6 @@ blacklist = [
     ".git",
     "README.md",
     "dconf-settings.conf",
-    "libinput-gestures.conf"
+    "libinput-gestures.conf",
+    "current-desktop.jpeg"
 ]
