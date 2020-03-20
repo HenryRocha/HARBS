@@ -35,7 +35,8 @@ packages = [
     "xorg-xset",
     "xsecurelock",
     "physlock",
-    "xdg-utils"
+    "xdg-utils",
+    "xss-lock"
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
