@@ -118,15 +118,6 @@ class HARBS():
 
         return
 
-    def configLy(self):
-        '''
-            Configures Ly, the TUI display manager.
-        '''
-
-        print(f"[{self.GREEN}HARBS{self.NC}] Configuring Ly, the TUI display manager...")
-        ![sudo systemctl enable ly.service]
-        ![sudo systemctl disable getty@tty2.service]
-
     def install(self):
         '''
             Installs HARBS.
@@ -142,9 +133,6 @@ class HARBS():
 
         # Unmute channels in ALSA
         self.configAlsa()
-
-        # Configure Ly
-        self.configLy()
 
 # ==========================================================================================================
 # Main
