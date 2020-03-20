@@ -37,6 +37,12 @@ packages = [
     "physlock"
 ]
 
+# All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
+# but be aware that removing some of the pre-defined packages may break HARBS.
+yayPackages = [
+    "ly-git"
+]
+
 # Dotfiles repository link, using HTTPS and with .git at the end.
 dotFilesRepository = "https://github.com/HenryRocha/dotfiles.git"
 

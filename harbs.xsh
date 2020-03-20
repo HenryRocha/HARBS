@@ -8,7 +8,7 @@ from config import *
 # Classes
 # ==========================================================================================================
 class HARBS():
-    def __init__(self, packages, dotFilesRepository, homeWhitelist, blacklist):
+    def __init__(self, packages, yayPackages, dotFilesRepository, homeWhitelist, blacklist):
         '''
             Initializes all the necessary variables.
 
@@ -25,6 +25,7 @@ class HARBS():
         '''
         # Given parameters.
         self.packages = packages
+        self.yayPackages = yayPackages
         self.dotFilesRepository = dotFilesRepository
         self.homeWhitelist = homeWhitelist
         self.blacklist = blacklist
@@ -47,8 +48,11 @@ class HARBS():
             Installs all the given packages.
         '''
 
-        print(f"\n[{self.GREEN}HARBS{self.NC}] Installing packages...")
+        print(f"\n[{self.GREEN}HARBS{self.NC}] Installing pacman packages...")
         ![sudo pacman -S @(self.packages)]
+
+        print(f"\n[{self.GREEN}HARBS{self.NC}] Installing aur packages using yay...")
+        ![yay -S @(self.yayPackages)]
 
         return
 
@@ -114,6 +118,15 @@ class HARBS():
 
         return
 
+    def configLy(self):
+        '''
+            Configures Ly, the TUI display manager.
+        '''
+
+        print(f"[{self.GREEN}HARBS{self.NC}] Configuring Ly, the TUI display manager...")
+        ![sudo systemctl enable ly.service]
+        ![sudo systemctl disable getty@tty2.service]
+
     def install(self):
         '''
             Installs HARBS.
@@ -130,12 +143,15 @@ class HARBS():
         # Unmute channels in ALSA
         self.configAlsa()
 
+        # Configure Ly
+        self.configLy()
+
 # ==========================================================================================================
 # Main
 # ==========================================================================================================
 if __name__ == "__main__":
     # Create HARBS object.
-    harbs = HARBS(packages, dotFilesRepository, homeWhitelist, blacklist)
+    harbs = HARBS(packages, yayPackages, dotFilesRepository, homeWhitelist, blacklist)
 
     # Run the HARBS installer.
     harbs.install()
