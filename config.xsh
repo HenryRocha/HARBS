@@ -4,8 +4,15 @@
 # All the packages that will be installed by HARBS. You can change this list as you see fit,
 # but be aware that removing some of the pre-defined packages may break HARBS.
 packages = [
+    # Needed for startx
     "xorg-server",
     "xorg-xinit",
+    # Needed to lock the screen automatically
+    "xorg-xset",
+    "xss-lock",
+    "xsecurelock",
+    "physlock",
+    # User programs
     "bspwm",
     "sxhkd",
     "rofi",
@@ -15,28 +22,28 @@ packages = [
     "ranger",
     "neofetch",
     "htop",
-    "ttf-font-awesome",
-    "ttf-jetbrains-mono",
-    "lxappearance",
-    "nitrogen",
     "git",
     "code",
     "brave",
     "network-manager-applet",
     "python-ueberzug",
+    "picom",
+    "xdg-utils",
+    # Monitors
+    "xorg-xrandr",
+    "autorandr",
+    # Appearance
+    "ttf-font-awesome",
+    "ttf-jetbrains-mono",
+    "lxappearance",
+    "nitrogen",
     "materia-gtk-theme",
     "arc-icon-theme",
-    "lxrandr",
+    # Audio
     "alsa-utils",
     "pulseaudio",
     "pulseaudio-alsa",
-    "pavucontrol",
-    "picom",
-    "xorg-xset",
-    "xsecurelock",
-    "physlock",
-    "xdg-utils",
-    "xss-lock"
+    "pavucontrol"
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
