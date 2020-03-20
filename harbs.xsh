@@ -48,11 +48,13 @@ class HARBS():
             Installs all the given packages.
         '''
 
-        print(f"\n[{self.GREEN}HARBS{self.NC}] Installing pacman packages...")
-        ![sudo pacman -S @(self.packages)]
+        if len(self.packages) > 0:
+            print(f"\n[{self.GREEN}HARBS{self.NC}] Installing pacman packages...")
+            ![sudo pacman -S @(self.packages)]
 
-        print(f"\n[{self.GREEN}HARBS{self.NC}] Installing aur packages using yay...")
-        ![yay -S @(self.yayPackages)]
+        if len(self.yayPackages) > 0:
+            print(f"\n[{self.GREEN}HARBS{self.NC}] Installing aur packages using yay...")
+            ![yay -S @(self.yayPackages)]
 
         return
 
