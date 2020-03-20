@@ -34,7 +34,8 @@ packages = [
     "picom",
     "xorg-xset",
     "xsecurelock",
-    "physlock"
+    "physlock",
+    "xdg-utils"
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
