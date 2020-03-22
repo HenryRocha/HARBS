@@ -33,6 +33,7 @@ packages = [
     "picom",
     "xdg-utils",
     "xorg-xev",
+    "spacefm",
     # Monitors
     "xorg-xrandr",
     # Appearance
