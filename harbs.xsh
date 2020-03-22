@@ -120,6 +120,16 @@ class HARBS():
 
         return
 
+    def configBluetooth(self):
+        '''
+            Enables and starts the bluetooth service.
+        '''
+
+        !(sudo systemctl enable bluetooth.service 2> /dev/null)
+        !(sudo systemctl start bluetooth.service 2> /dev/null)
+
+        return
+
     def install(self):
         '''
             Installs HARBS.
@@ -135,6 +145,9 @@ class HARBS():
 
         # Unmute channels in ALSA
         self.configAlsa()
+
+        # Enable/start bluetooth service
+        self.configBluetooth()
 
 # ==========================================================================================================
 # Main
