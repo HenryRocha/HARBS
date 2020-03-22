@@ -12,6 +12,9 @@ packages = [
     "xss-lock",
     "xsecurelock",
     "physlock",
+    # Settings manager
+    "xfce4-power-manager",
+    "xfce4-settings",
     # User programs
     "bspwm",
     "sxhkd",
