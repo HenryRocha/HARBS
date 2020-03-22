@@ -32,13 +32,12 @@ packages = [
     "python-ueberzug",
     "picom",
     "xdg-utils",
+    "xorg-xev",
     # Monitors
     "xorg-xrandr",
-    "autorandr",
     # Appearance
     "ttf-font-awesome",
     "ttf-jetbrains-mono",
-    "lxappearance",
     "nitrogen",
     "materia-gtk-theme",
     "arc-icon-theme",
@@ -46,7 +45,10 @@ packages = [
     "alsa-utils",
     "pulseaudio",
     "pulseaudio-alsa",
-    "pavucontrol"
+    "pavucontrol",
+    # Bluetooth,
+    "bluez",
+    "blueman"
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
