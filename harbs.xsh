@@ -144,10 +144,10 @@ class HARBS():
         self.createSymbolicLinks()
 
         # Unmute channels in ALSA
-        self.configAlsa()
+        #self.configAlsa()
 
         # Enable/start bluetooth service
-        self.configBluetooth()
+        #self.configBluetooth()
 
 # ==========================================================================================================
 # Main
