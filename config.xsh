@@ -10,7 +10,7 @@ packages = [
     "rofi",
     "alacritty",
     "neovim",
-    "ranger",
+    #"ranger",
     "neofetch",
     "htop",
     "git",
@@ -20,6 +20,9 @@ packages = [
     # Appearance
     "ttf-jetbrains-mono",
     "nitrogen",
+    "xorg-xrandr",
+    "zsh-history-substring-search",
+    "zsh-syntax-highlithing",
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
