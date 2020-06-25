@@ -21,6 +21,12 @@ packages = [
     "xorg-xrandr",
     "zsh-history-substring-search",
     "zsh-syntax-highlighting",
+    "pulseaudio",
+    "pavucontrol",
+    "matcha-gtk-theme",
+    "lxappearance",
+    "ttf-font-awesome",
+    "pamixer",
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
@@ -49,7 +55,6 @@ blacklist = [
     "libinput-gestures.conf",
     "current-desktop.jpeg",
     "gtk-3.0",
-    "polybar",
     ".Xresources",
     ".locker.sh",
     ".gtkrc-2.0",
