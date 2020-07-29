@@ -6,6 +6,7 @@
 packages = [
     # User programs
     "bspwm",
+    "flameshot",
     "sxhkd",
     "rofi",
     "alacritty",
@@ -18,22 +19,17 @@ packages = [
     "spacefm",
     "ttf-jetbrains-mono",
     "nitrogen",
-    "xorg-xrandr",
     "zsh-history-substring-search",
     "zsh-syntax-highlighting",
     "pulseaudio",
     "pavucontrol",
-    "matcha-gtk-theme",
-    "lxappearance",
     "ttf-font-awesome",
-    "pamixer",
 ]
 
 # All the packages that will be installed by HARBS using Yay. You can change this list as you see fit,
 # but be aware that removing some of the pre-defined packages may break HARBS.
 yayPackages = [
     "spaceship-prompt-git",
-    "ranger-git",
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
@@ -53,10 +49,5 @@ blacklist = [
     "README.md",
     "dconf-settings.conf",
     "libinput-gestures.conf",
-    "current-desktop.jpeg",
-    "gtk-3.0",
-    ".Xresources",
-    ".locker.sh",
-    ".gtkrc-2.0",
     ".xinitrc",
 ]
