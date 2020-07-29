@@ -46,6 +46,7 @@ blacklist = [
     ".",
     "..",
     ".git",
+    ".gitignore",
     "README.md",
     "dconf-settings.conf",
     "libinput-gestures.conf",
