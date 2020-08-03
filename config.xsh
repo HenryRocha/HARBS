@@ -29,7 +29,7 @@ packages = [
     "lxrandr",
     "pulseaudio",
     "pavucontrol",
-    "xss-lock",
+    "xautolock",
     "xsecurelock",
     "matcha-gtk-theme",
     "pamixer",
