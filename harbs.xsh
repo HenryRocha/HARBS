@@ -109,6 +109,17 @@ class HARBS():
 
         return
 
+    def configLy(self):
+        '''
+            Configures the Ly display manager.
+        '''
+
+        !(sudo systemctl enable ly.service)
+        !(sudo systemctl start ly.service)
+        !(sudo systemctl disable getty@tty2.service)
+
+        return
+
     def configAlsa(self):
         '''
             Unmutes all the channels in ALSA. Mainly so I don't forget to do it.
