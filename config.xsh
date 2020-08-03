@@ -30,6 +30,7 @@ packages = [
     "pavucontrol",
     "xss-lock",
     "xsecurelock",
+    "matcha-gtk-theme",
     # Bluetooth
     "bluez",
     "bluez-utils",
