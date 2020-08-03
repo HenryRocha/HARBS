@@ -31,6 +31,8 @@ packages = [
     "xss-lock",
     "xsecurelock",
     "matcha-gtk-theme",
+    "pamixer",
+    "ranger",
     # Bluetooth
     "bluez",
     "bluez-utils",
