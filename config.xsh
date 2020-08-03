@@ -4,25 +4,42 @@
 # All the packages that will be installed by HARBS. You can change this list as you see fit,
 # but be aware that removing some of the pre-defined packages may break HARBS.
 packages = [
+    # Base programs
+    "xorg-server",
+    "xorg-xinit",
     # User programs
-    "bspwm",
-    "flameshot",
-    "sxhkd",
-    "rofi",
-    "alacritty",
+    "git",
     "neovim",
+    "bspwm",
+    "sxhkd",
+    "dex",
+    "rofi",
+    "code",
+    "firefox",
+    "alacritty",
+    "pcmanfm",
+    "flameshot",
     "neofetch",
     "htop",
-    "git",
-    "code",
-    "python-ueberzug",
-    "spacefm",
-    "ttf-jetbrains-mono",
+    "polybar",
+    "ueberzug",
     "nitrogen",
-    "zsh-history-substring-search",
-    "zsh-syntax-highlighting",
+    "lxappearance",
+    "lxrandr",
     "pulseaudio",
     "pavucontrol",
+    "xss-lock",
+    "xsecurelock",
+    # Bluetooth
+    "bluez",
+    "bluez-utils",
+    "blueman",
+    "pulseaudio-bluetooth",
+    # ZSH plugins
+    "zsh-history-substring-search",
+    "zsh-syntax-highlighting",
+    # Fonts
+    "ttf-jetbrains-mono",
     "ttf-font-awesome",
 ]
 
@@ -30,6 +47,8 @@ packages = [
 # but be aware that removing some of the pre-defined packages may break HARBS.
 yayPackages = [
     "spaceship-prompt-git",
+    "deadd-notification-center-bin",
+    "ly",
 ]
 
 # Dotfiles repository link, using HTTPS and with .git at the end.
