@@ -7,6 +7,7 @@ packages = [
     # Base programs
     "xorg-server",
     "xorg-xinit",
+    "xorg-xsetroot",
     # User programs
     "git",
     "neovim",
@@ -33,6 +34,7 @@ packages = [
     "matcha-gtk-theme",
     "pamixer",
     "ranger",
+    "picom",
     # Bluetooth
     "bluez",
     "bluez-utils",
