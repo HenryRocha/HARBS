@@ -1,5 +1,5 @@
 # HARBS
-Henry's Auto-Rice Bootstrapping Scripts. Install everything you need to have a system just like mine.
+Henry's Auto-Rice Bootstrapping Scripts. Scripts to quickly setup a fully functional Manjaro system.
 
 ## Table of Contents
 - [HARBS](#harbs)
@@ -13,7 +13,7 @@ Henry's Auto-Rice Bootstrapping Scripts. Install everything you need to have a s
 
 HARBS is a script written in [xonsh][1] that autoinstalls and autoconfigures a fully-functioning minimal Manjaro environment.
 
-HARBS is intended to be run on a fresh install of Manjaro XFCE, using [Manjaro Architect][2] to install the minimal edition. Most of HARBS should work on any Arch-based distro, but it is not guaranteed.
+HARBS is intended to be run on a fresh install of Manjaro CLI, using [Manjaro Architect][2] to install the minimal edition. Most of HARBS should work on any Arch-based distro, but it is not guaranteed.
 
 ## Installation
 
